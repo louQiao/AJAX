@@ -1,0 +1,18 @@
+原理：
+1、创建ajax对象
+   var ajax = new XMLHttpRequest();
+2、填写地址
+   get方式：
+   ajax.open('get','接口地址+'encodeURI(拼写),true);
+   post方式：
+   ajax.open('post','接口地址',true);
+3、发送请求
+   get方式：
+   ajax.send();
+   post方式：
+   ajax.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+   ajax.send(拼写);
+4、等待服务器响应
+   ajax.onload;
+5、会话
+   ajax.responseText;
